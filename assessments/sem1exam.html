@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+     <body>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <div style="background-color:#00bcd4;color:Black;padding:px;">
+         <h1><u>Vaughn Soludczyk</u></h1>
+         <h2><i>Period 1</i></h2>
+         </div>
+         <hr></hr>
+         <div style="background-color:#00bcd4;color:Black;padding:px;">
+         <p style=font-size:172%>
+         <img src="https://images-na.ssl-images-amazon.com/images/I/51SZyBVNjtL._SX340_BO1,204,203,200_.jpg" alt="Hitchhiker's Guide to the Galaxy" style="float:left;width:200px;height:200px;">
+          Hitchhiker's Guide to the Galaxy is a science fiction novel by Douglas Adams, which involves a normal average joe named Arthur Dent going on an adventure throughout the galaxy after a tragic event involves the Earth being destroyed to make way for a galactic bypass. 
+         </p>
+         </div>
+         <hr></hr>
+         <a href="AboutMe.html" type="button" class="btn btn-link btn-lg">About Me</a>
+         <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Shigeru Miyamoto</h4>
+            <p class="card-text">Shigeru Miyamoto is the co-representative director of Nintendo, and is directly responsible for the Super Mario, Zelda, and Donkey Kong game series.</p>
+            <a href="https://en.wikipedia.org/wiki/Shigeru_Miyamoto" class="card-link">Shigeru Miyamoto's Wikipedia Page</a>
+         </div>
+         </div>
+         <hr></hr>
+         <div class="container">
+  <div id="Carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#Carousel" data-slide-to="1"></li>
+      <li data-target="#Carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/blog/2017/03/Refurbished-Toyota-AE86.jpg" alt="" style="width:100%;">
+        <div class="carousel-caption"> <h1>Toyota Trueno AE86</h1>
+        </div>
+        </div>
+
+      <div class="item">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41RFXVXH0CL.jpg" alt="Gameboy Micro" style="width:100%;">
+      <h1>Gameboy Micro</h1>
+      </div>
+    
+      <div class="item">
+        <img src="https://www.pokemoncenter.com/wcsstore/PokemonCatalogAssetStore/images/catalog/products/P2931/701-00074/P2931_701-00074_02_thumb.jpg" alt="Ditto Charmander" style="width:100%;">
+      <h1>Ditto Charmander Plushie</h1>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#Carousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#Carousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+      </div>
+    </div>
+    <hr></hr>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("https://data.cityofchicago.org/resource/tt4n-kn4t.json", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+</script>
+     </body>
+</html>
